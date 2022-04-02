@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Card } from '../components/Card';
-import { Counter } from '../components/Counter'
-import Header from '../components/Header'
+import { Counter } from '../components/Counter';
+import Header from '../components/Header';
+import Star from '../assets/star.png';
 
 const Home = () => {
 
@@ -31,11 +32,21 @@ const Home = () => {
         <div className="product-info_container">
           <span className='product-info_text'>Pantalones para Dama "The Sideswept Dhoti"</span>
           <div className="product-info_stars">
-            <span className="star">☆</span>
-            <span className="star">☆</span>
-            <span className="star">☆</span>
-            <span className="star">☆</span>
-            <span className="star">☆</span>
+            <span className="star">
+              <img src={Star} />
+            </span>
+            <span className="star">
+              <img src={Star} />
+            </span>
+            <span className="star">
+              <img src={Star} />
+            </span>
+            <span className="star">
+              <img src={Star} />
+            </span>
+            <span className="star">
+              <img src={Star} />
+            </span>
             <span className='star_text'>4 de 5</span>
           </div>
           <div className="product-info-price">

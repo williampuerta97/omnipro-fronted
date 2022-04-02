@@ -22,7 +22,37 @@
   .menu-item {
     width: 16px;
     height: 16px;
-    padding-left: 20px;
+    padding-left: 30px;
+
+    .menu-item_icon {
+      .menu-item_icon-line {
+        width: 20px;
+        border-top: 1px solid #000;
+      }
+
+      .floating-count {
+        position: relative;
+        background-color: #D61043;
+        bottom: 35px;
+        left: 15px;
+        color: #fff;
+        border-radius: 100%;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        font-size: 10px;
+        padding: 0px;
+      }
+
+      .second {
+        margin-top: 5px;
+      }
+
+      .third {
+        margin-top: 5px;
+        width: 15px;
+      }
+    }
   }
 }
 
@@ -53,8 +83,15 @@
   }
 
   .product-info_stars {
+    padding-top: 10px;
+
     .star {
       padding: 0 5px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
     }
     .star_text {
       color: #8c8c8c;

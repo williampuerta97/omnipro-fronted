@@ -1,0 +1,162 @@
+//@form-bg-color: #392f62;
+@form-bg-color: #392f62d9;
+@form-bg-color-opacity: #392f6280;
+
+* {
+    font-family: 'Dosis';
+}
+
+.login-body {
+    background: url('../assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    z-index: 2;
+
+    .login-header {
+        display: flex;
+        padding: 10px;
+        justify-content: flex-end;
+
+        .login-header_menu-button {
+            border: none;
+            background: transparent;
+            color: #fff;
+            font-size: 20px;
+            align-self: flex-end;
+        }
+    }
+    
+    .login-logo {
+        font-size: 150px;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .login-form {
+
+        margin: 0 20px;
+        position: relative;
+        z-index: 2;
+        
+        .login-form-header {
+            display: flex;
+            flex-direction: row;
+
+            .login-form-header_item {
+                width: 50%;
+                color: #fff;
+                padding: 20px 0;
+                background-color: @form-bg-color-opacity;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .active {
+                background-color: @form-bg-color;
+                border-bottom: 1px solid #393172;
+            }
+
+            .signin {
+                border-top-left-radius: 6px;
+            }
+
+            .signup {
+                border-top-right-radius: 6px;
+            }
+        }
+
+        .login-form-container {
+            padding: 22px;
+            background-color: @form-bg-color;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            
+            .login-form-body {
+                border-top: 1px solid #393172;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    
+                    label {
+                        align-self: flex-start;
+                        color: #f5f5f5;
+                    }
+
+                    .input {
+                        border: none;
+                        background-color: transparent;
+                        border-bottom: 1px solid #f5f5f5;
+                        --webkit-appearance: none;
+                        outline: none;
+                        box-shadow: none;
+                        padding: 10px 0;
+                    }
+
+                    .input:focus {
+                        border-bottom: 2px solid #2FCCC3;
+                    }
+                }
+            }
+
+            .switch-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 20px;
+
+                .switch {
+
+                }
+
+                .switch-label {
+                    color: #f5f5f5;
+                    margin-left: 10px;
+                }
+            }
+
+            .button-container {
+                display: flex;
+                flex-direction: column;
+
+                .sign-button {
+                    padding: 15px;
+                    background-color: #79e2e4;
+                    border: none;
+                    border-radius: 25px;
+                    color: #fff;
+                    font-size: 18px;
+                }
+
+                .forgot-password {
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+.fill8 {
+    position: absolute;
+    top: 23%;
+    left: 0;
+}
+
+.fill13 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: 1;
+}
+
+.fill17 {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
