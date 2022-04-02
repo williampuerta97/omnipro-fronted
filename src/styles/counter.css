@@ -1,0 +1,26 @@
+.container {
+  width: 118px;
+  height: 38px;
+  border: 1px solid #bec6c9;
+  display: flex;
+}
+.container .counter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.container .counter .counter_text {
+  align-self: center;
+  line-height: 2;
+  color: #33333a;
+}
+.container .button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.container .button .button_icon {
+  line-height: 2;
+  color: #33333a;
+}
+/*# sourceMappingURL=counter.css.map */
